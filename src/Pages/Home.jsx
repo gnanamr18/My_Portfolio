@@ -1,23 +1,30 @@
 import React from "react";
+import { useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import About from "./About";
 
 function Home() {
+    const [display, setDisplay] = useState('home');
+
   return (
-    <div className="bg-gray-200 min-h-screen antialiased flex flex-col">
+    <div>
+    {/* Home page */}
+    {display === 'home' && <div className="bg-gray-200 text-gray-800 min-h-screen antialiased flex flex-col w-full ">
       {/* Navbar */}
-      <div>
-        <Navbar />
+      <div className="sticky top-2 z-10">
+        <Navbar setDisplay={setDisplay} />
       </div>
       {/* Home page */}
-      <div className="flex flex-col  m-6 p-6 mx-auto">
+      <div className="flex flex-col items-start  gap-8 max-w-5xl m-5 p-5 selection: mx-auto">
         {/* logo */}
         <img
           src="/images/logo.jpeg"
           alt="logo"
           className="rounded-full w-16 h-16 hover:cursor-pointer mt-12"
+          onClick={()=>{setDisplay('home')}}
         />
-        <section className="flex flex-col items-center lg:flex-row lg:justify-center gap-20  p-3">
+        <section className="flex flex-col items-center lg:flex-row lg:justify-center gap-20">
           {/* Profile Image */}
           <img
             src="/images/profile.jpg"
@@ -27,12 +34,12 @@ function Home() {
 
           {/* Bold Text */}
           <div className="flex flex-col gap-8  mt-5">
-            <span className="font-serif font-semibold text-3xl leading-loose lg:max-w-xl">
-              I'm a Software developer, a traveler and voracious reader from
+            <span className="font-serif font-semibold text-2xl leading-loose lg:max-w-5xl">
+              I'm a Software developer, a traveler and a voracious reader from
               Coimbatore. You'll get to know me best when we collaborate.
             </span>
             {/* Normal Text */}
-            <p className="font-mono text-lg mt-2 leading-loose  p-1 lg:max-w-xl">
+            <p className="font-mono text-xl mt-2 leading-loose  p-1 ">
               I am a software developer with expertise in React.js, Express.js,
               Redux toolkit, SQL, and MongoDB. I have experience in building
               scalable, secure, and reliable web applications using various
@@ -45,8 +52,13 @@ function Home() {
           </div>
         </section>
       </div>
-      <Footer/>
+      <Footer setDisplay={setDisplay} />
+    </div>}
+
+    {/* ABOUT PAGE */}
+    {display === 'aboutUs' && <About setDisplay={setDisplay} />}
     </div>
+    
   );
 }
 
