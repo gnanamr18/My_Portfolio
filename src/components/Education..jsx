@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Education() {
   return (
-    <div className="bg-white p-3 m-3 border shadow-xl flex flex-col gap-2 max-w-lg rounded-xl">
-      <section className="flex gap-3 m-3 p-3 mb-2">
+    <div className="bg-white p-2 m-2 border shadow-xl flex flex-col gap-2 max-w-md rounded-xl">
+      <section className="flex gap-3 m-2 p-2 mb-2">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
@@ -18,7 +18,7 @@ export default function Education() {
         <span className="text-gray-800 font-semibold">Education</span>
       </section>
       {/* Education 1 */}
-      <div className="flex m-3 p-3 justify-between">
+      <div className="flex m-2 p-2 justify-between">
         <div className="flex flex-row gap-5">
           <img
             className="w-16 h-16 rounded-full"
@@ -26,8 +26,8 @@ export default function Education() {
             src="/images/GCT_logo.png"
           />
           <div className="flex flex-col">
-            <strong>Government College of Technology</strong>
-            <p>BE</p>
+            <strong>Government College of Technology-Coimbatore</strong>
+            <p>BE(MECH)</p>
           </div>
         </div>
         <p>JUN,2016 - DEC 2020</p>

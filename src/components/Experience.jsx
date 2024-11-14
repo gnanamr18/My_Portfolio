@@ -1,9 +1,10 @@
 import React from "react";
+import experienceData from "../data/experience";
 
 function Experience() {
   return (
-    <div className="bg-white p-3 m-3 border shadow-xl flex flex-col gap-2 max-w-lg rounded-xl">
-      <section className="flex gap-3 m-3 p-3 mb-2">
+    <div className="bg-white p-2 m-2 border shadow-xl flex flex-col gap-2 max-w-md rounded-xl">
+      <section className="flex gap-3 m-2 p-2 mb-2">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
@@ -20,37 +21,25 @@ function Experience() {
 
         <span className="text-gray-800 font-semibold">Work Experience</span>
       </section>
-      {/* experience 1 */}
-      <div className="flex m-3 p-3  gap-20 justify-between">
-        <div className="flex flex-row gap-5">
-          <img
-            className="w-16 h-16 rounded-full bg-gray-800"
-            alt="image"
-            src="/images/commandhq_logo.jpeg"
-          />
-          <div className="flex flex-col">
-            <strong>Command HQ</strong>
-            <p>Software Engineeer</p>
+      {/* experience  */}
+      {experienceData.map((item, index) => {
+        return (
+          <div key={index} className="flex m-2 p-2  gap-20 justify-between">
+            <div className="flex flex-row gap-5">
+              <img
+                className="w-16 h-16 rounded-full bg-gray-800"
+                alt="image"
+                src={item.img}
+              />
+              <div className="flex flex-col">
+                <strong>{item.name}</strong>
+                <p>{item.role}</p>
+              </div>
+            </div>
+            <p className="text-right">{item.period}</p>
           </div>
-        </div>
-        <p>Jan,2024 - July 2024</p>
-      </div>
-
-      {/* experience 2 */}
-      <div className="flex m-3 p-3 gap-20 justify-between">
-        <div className="flex flex-row gap-5">
-          <img
-            className="w-16 h-16 rounded-full"
-            alt="image"
-            src="/images/hyperverge_academy_logo.jpeg"
-          />
-          <div className="flex flex-col">
-            <strong>Hyperverge</strong>
-            <p>Full Stack Developer Fellowship</p>
-          </div>
-        </div>
-        <p>JUN,2023 - DEC 2023</p>
-      </div>
+        );
+      })}
     </div>
   );
 }

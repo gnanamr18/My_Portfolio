@@ -3,15 +3,16 @@ import { useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import About from "./About";
+import Projects from "./Projects";
+import Img from "../components/Img";
 
 function Home() {
     const [display, setDisplay] = useState('home');
 
     const handleOnClick =(arg)=>{
       setDisplay(arg)
-      console.log('h')
+     
     }
-    console.log(display)
   return (
     <div>
     {/* Home page */}
@@ -31,11 +32,7 @@ function Home() {
         />
         <section className="flex flex-col items-center md:flex-row md:justify-center gap-20">
           {/* Profile Image */}
-          <img
-            src="/images/profile.jpg"
-            alt="profile"
-            className="rounded-3xl rotate-2 hover:cursor-pointer w-96 h-80 md:order-last md:self-start"
-          />
+          <Img src="/images/profile.jpg" alt="coverPhoto" design={"rounded-3xl rotate-2 hover:cursor-pointer w-96 h-80 md:order-last md:self-start"}/>
 
           {/* Bold Text */}
           <div className="flex flex-col gap-8  mt-5">
@@ -64,6 +61,10 @@ function Home() {
 
     {/* ABOUT PAGE */}
     {display === 'aboutUs' && <About handleOnClick={handleOnClick} />}
+
+    {/* PROJECT PAGE */}
+    {display === 'projects' && <Projects handleOnClick={handleOnClick} />}
+
     </div>
     
   );

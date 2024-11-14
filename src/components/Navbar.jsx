@@ -18,7 +18,8 @@ function Navbar({ handleOnClick }) {
         >
           About
         </li>
-        <li className="cursor-pointer hover:underline hover:text-orange-400">
+        <li className="cursor-pointer hover:underline hover:text-orange-400" onClick={() => {
+           handleOnClick('projects')}}>
           Projects
         </li>
         <li className="cursor-pointer hover:underline hover:text-orange-400">
