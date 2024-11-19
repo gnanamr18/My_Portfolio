@@ -7,7 +7,7 @@ import Projects from "./Projects";
 import Img from "../components/Img";
 
 function Home() {
-    const [display, setDisplay] = useState('home');
+    const [display, setDisplay] = useState('Home');
 
     const handleOnClick =(arg)=>{
       setDisplay(arg)
@@ -16,7 +16,7 @@ function Home() {
   return (
     <div>
     {/* Home page */}
-    {display === 'home' && <div className="bg-gray-200 text-gray-800 min-h-screen antialiased flex flex-col w-fit sm:w-full ">
+    {display === 'Home' && <div className="bg-gray-200 text-gray-800 min-h-screen antialiased flex flex-col w-fit sm:w-full ">
       {/* Navbar */}
       <div className="sticky top-2 z-10">
         <Navbar handleOnClick={handleOnClick} />
@@ -36,7 +36,7 @@ function Home() {
 
           {/* Bold Text */}
           <div className="flex flex-col gap-8  mt-5">
-            <span className="font-serif font-semibold text-2xl leading-loose md:max-w-5xl">
+            <span className="font-serif font-semibold text-2xl leading-loose  md:text-4xl md:leading-loose md:max-w-5xl">
               I'm a Software developer, a traveler and a voracious reader from
               India. You'll get to know me best when we collaborate.
             </span>
@@ -60,10 +60,10 @@ function Home() {
     </div>}
 
     {/* ABOUT PAGE */}
-    {display === 'aboutUs' && <About handleOnClick={handleOnClick} />}
+    {display === 'About' && <About handleOnClick={handleOnClick} />}
 
     {/* PROJECT PAGE */}
-    {display === 'projects' && <Projects handleOnClick={handleOnClick} />}
+    {display === 'Projects' && <Projects handleOnClick={handleOnClick} />}
 
     </div>
     

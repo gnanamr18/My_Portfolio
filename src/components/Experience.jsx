@@ -3,7 +3,7 @@ import experienceData from "../data/experience";
 
 function Experience() {
   return (
-    <div className="bg-white p-2 m-2 border shadow-xl flex flex-col gap-2 max-w-md rounded-xl">
+    <div className="bg-white p-2 m-2 border shadow-xl flex flex-col w-full gap-2  rounded-xl">
       <section className="flex gap-3 m-2 p-2 mb-2">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -24,19 +24,21 @@ function Experience() {
       {/* experience  */}
       {experienceData.map((item, index) => {
         return (
-          <div key={index} className="flex m-2 p-2  gap-20 justify-between">
-            <div className="flex flex-row gap-5">
+          <div key={index} className="flex m-2 p-2 gap-5 justify-between">
               <img
-                className="w-16 h-16 rounded-full bg-gray-800"
+                className="w-16 h-16 rounded-full border border-gray-500"
                 alt="image"
                 src={item.img}
               />
-              <div className="flex flex-col">
-                <strong>{item.name}</strong>
-                <p>{item.role}</p>
-              </div>
+            
+            <div className="flex flex-col w-full mx-auto">
+              <strong>{item.name}</strong>
+              <p>{item.role}</p>
             </div>
-            <p className="text-right">{item.period}</p>
+
+            
+              <p className="">{item.period}</p>
+            
           </div>
         );
       })}

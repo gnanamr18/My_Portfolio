@@ -3,7 +3,7 @@ const Data = [
   {
     name: "Dictionary",
     description:
-      "A personal portfolio website showcasing my projects and skills.",
+      "A dynamic dictionary app that lets you quickly search for word meanings, synonyms, and usage examples.",
     link: "https://eng-dictionary-app.netlify.app/",
     image: "images/dictionary.png",
   },
@@ -17,19 +17,19 @@ const Data = [
   {
     name: "ROCK PAPER SCISSOR GAME",
     description:
-      "A weather application that displays the current weather conditions based on location.",
+      "A fun, interactive Rock-Paper-Scissors game where you can challenge the computer and test your strategy skills.",
     link: "https://gnanamr18.github.io/Rock-Paper-scissor.github.io/",
     image: "images/rps.png",
   },
   {
     name: "Bus Ticketing",
     description:
-      "A real-time chat application with user authentication and message history.",
+      "A convenient bus ticketing app that lets you search, compare, and book bus tickets easily for hassle-free travel.",
     link: "https://github.com/gnanamr18/Bus_Ticketing_UI",
     image: "images/bus.png",
   },
   {
-    name: "Task Manager",
+    name: "NEWS App",
     description:
       "An app for managing personal tasks, with categories, due dates, and reminders.",
     link: "https://yourtaskmanager.com",
