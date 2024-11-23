@@ -7,6 +7,7 @@ import Projects from "./Projects";
 import Img from "../components/Img";
 import Contact from "./Contact";
 import Content from "../components/Content";
+import textContent from "../data/textContent.js"
 
 function Home() {
   const [display, setDisplay] = useState("Home");
@@ -41,25 +42,17 @@ function Home() {
               {/* Bold Text */}
               <div className="flex flex-col gap-8  mt-5">
                 <span className="font-serif font-semibold text-2xl leading-loose  md:text-4xl md:leading-loose md:max-w-5xl">
-                  I'm a Software developer, a traveler and a voracious reader
-                  from India. You'll get to know me best when we collaborate.
+                 {textContent.home.intro}
                 </span>
                 {/* Normal Text */}
                 <p className="font-mono text-xl mt-2 leading-loose  p-1 ">
-                  I am a software developer with expertise in React.js,
-                  Express.js, Redux toolkit, SQL, and MongoDB. I have experience
-                  in building scalable, secure, and reliable web applications
-                  using various frameworks and technologies. I enjoy solving
-                  complex problems and learning new skills. I am passionate
-                  about creating high-quality code that follows best practices
-                  and industry standards. I am always looking for new challenges
-                  and opportunities to grow as a developer.
+                {textContent.home.description}
                 </p>
               </div>
             </section>
           </Content>
           <div>
-            <Footer handleOnClick={handleOnClick} />
+            <Footer handleOnClick={handleOnClick} selectedItem={selectedItem} />
           </div>
         </div>
       )}
