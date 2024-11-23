@@ -2,26 +2,19 @@ import React from "react";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Icon from "../components/Icon";
+import Content from "../components/Content";
 
 const Contact = ({ handleOnClick, selectedItem }) => {
+
   return (
     <div className="bg-gray-200 text-gray-800 min-h-screen antialiased flex flex-col w-fit sm:w-full ">
       {/* Navbar */}
       <div className="sticky top-2 z-10">
         <Navbar handleOnClick={handleOnClick} selectedItem={selectedItem} />
       </div>
-      {/* Home page */}
-      <div className="flex flex-col items-start  gap-8 max-w-5xl m-5 p-5 selection: mx-auto">
-        {/* logo */}
-        <img
-          src="/images/logo.jpeg"
-          alt="logo"
-          className="rounded-full w-16 h-16 hover:cursor-pointer mt-12"
-          onClick={() => {
-            handleOnClick("Home");
-          }}
-        />
-        <section className="flex flex-col items-center md:flex-row md:justify-center gap-20">
+      {/* Contact page */}
+      <Content>
+        <section  className="flex flex-col items-center md:flex-row md:justify-center gap-20">
           {/* Bold Text */}
           <div className="flex flex-col gap-8  mt-5">
             <span className="font-serif font-semibold text-2xl leading-loose  md:text-5xl md:leading-loose md:max-w-5xl">
@@ -54,11 +47,10 @@ const Contact = ({ handleOnClick, selectedItem }) => {
             </p>
           </div>
         </section>
-          
+
         {/* Info */}
-          <Icon/>
-          
-      </div>
+        <Icon />
+      </Content>
       <div>
         <Footer handleOnClick={handleOnClick} />
       </div>

@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Project from "../components/Project";
+import Content from "../components/Content";
 
 function Projects({ handleOnClick, selectedItem }) {
   return (
@@ -11,17 +12,8 @@ function Projects({ handleOnClick, selectedItem }) {
         <Navbar handleOnClick={handleOnClick} selectedItem={selectedItem} />
       </div>
       {/* Home page */}
-      <div className="flex flex-col items-start  gap-8 max-w-5xl m-5 p-5 selection: mx-auto">
-        {/* logo */}
-        <img
-          src="/images/logo.jpeg"
-          alt="logo"
-          className="rounded-full w-16 h-16 hover:cursor-pointer mt-12"
-          onClick={() => {
-            handleOnClick("home");
-          }}
-        />
-        <section className="flex flex-col items-center md:flex-row md:justify-center gap-20">
+      <Content  >
+        <section className="flex flex-col items-center md:flex-row md:justify-center gap-20" >
           <div className="flex flex-col gap-8  mt-5">
             <span className="font-serif font-semibold text-4xl leading-loose md:max-w-5xl">
               Things I’ve made trying to put my dent in the universe.
@@ -37,9 +29,9 @@ function Projects({ handleOnClick, selectedItem }) {
             </p>
           </div>
         </section>
-        
-        <Project/>
-      </div>
+
+        <Project />
+      </Content>
       <div>
         <Footer handleOnClick={handleOnClick} />
       </div>
