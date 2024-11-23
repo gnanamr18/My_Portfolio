@@ -22,11 +22,8 @@ const textContent = {
     description1: `Thank you for your interest in getting in touch with me. I welcome
                   your feedback, questions, and suggestions.`,
     description2: `. I make an effort to respond to all messages within 24 hours,
-                  although it may take me longer during busy periods. Alternatively,
-                   you can use the contact form on my website to get in touch. Simply
-                  fill out the required fields and I'll get back to you as soon as
-                  possible. Finally, if you prefer to connect on social media, you
-                  can find me on{" "}`,
+                  although it may take me longer during busy periods.Finally, if you prefer to connect on social media,
+                  you can find me on LinkdeIn by clicking the following link  `,
     description3: ` . I post regular updates and engage with my followers there, so
                     don't hesitate to reach out. Thanks again for your interest, and I
                     look forward to hearing from you!`,
