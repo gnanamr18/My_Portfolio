@@ -5,12 +5,16 @@ import Footer from "../components/Footer";
 import About from "./About";
 import Projects from "./Projects";
 import Img from "../components/Img";
+import Contact from "./Contact";
 
 function Home() {
     const [display, setDisplay] = useState('Home');
+    const [selectedItem, setSelectedItem] = useState('Home');
+
 
     const handleOnClick =(arg)=>{
       setDisplay(arg)
+      setSelectedItem(arg)
      
     }
   return (
@@ -19,7 +23,7 @@ function Home() {
     {display === 'Home' && <div className="bg-gray-200 text-gray-800 min-h-screen antialiased flex flex-col w-fit sm:w-full ">
       {/* Navbar */}
       <div className="sticky top-2 z-10">
-        <Navbar handleOnClick={handleOnClick} />
+        <Navbar handleOnClick={handleOnClick} selectedItem={selectedItem} />
       </div>
       {/* Home page */}
       <div className="flex flex-col items-start  gap-8 max-w-5xl m-5 p-5 selection: mx-auto">
@@ -60,11 +64,13 @@ function Home() {
     </div>}
 
     {/* ABOUT PAGE */}
-    {display === 'About' && <About handleOnClick={handleOnClick} />}
+    {display === 'About' && <About handleOnClick={handleOnClick} selectedItem={selectedItem}  />}
 
     {/* PROJECT PAGE */}
-    {display === 'Projects' && <Projects handleOnClick={handleOnClick} />}
+    {display === 'Projects' && <Projects handleOnClick={handleOnClick} selectedItem={selectedItem} />}
 
+
+    {display === "Contact" && <Contact handleOnClick={handleOnClick} selectedItem={selectedItem}/>} 
     </div>
     
   );

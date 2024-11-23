@@ -5,12 +5,12 @@ import Experience from "../components/Experience";
 import Education from "../components/Education.";
 import Img from "../components/Img";
 
-function About({ handleOnClick }) {
+function About({ handleOnClick, selectedItem }) {
   return (
     <div className="bg-gray-200 text-gray-800 min-h-screen antialiased flex flex-col w-fit sm:w-full">
       {/* Navbar */}
       <div className="sticky top-2 z-10">
-        <Navbar handleOnClick={handleOnClick} />
+        <Navbar handleOnClick={handleOnClick} selectedItem={selectedItem} />
       </div>
 
       {/* About page */}

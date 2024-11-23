@@ -1,5 +1,5 @@
 // projects.js
-const Data = [
+const projects = [
   {
     name: "Dictionary",
     description:
@@ -44,4 +44,4 @@ const Data = [
   },
 ];
 
-export default Data;
+export default projects;

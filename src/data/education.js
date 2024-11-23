@@ -1,4 +1,3 @@
-// projects.js
 const education = [
   {
     img: "/images/GCT_logo.png",
