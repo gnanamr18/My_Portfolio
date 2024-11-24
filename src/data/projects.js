@@ -31,16 +31,15 @@ const projects = [
   {
     name: "NEWS App",
     description:
-      "An app for managing personal tasks, with categories, due dates, and reminders.",
-    link: "https://yourtaskmanager.com",
+      "A reliable news app that keeps you updated with the latest headlines and breaking stories effortlessly.",
+    link: "https://github.com/gnanamr18/NEWS-API",
     image: "https://yourtaskmanager.com/images/taskmanager.png",
   },
   {
-    name: "Blog Platform",
-    description:
-      "A platform where users can create, edit, and share blog posts with rich text editing.",
-    link: "https://yourblogplatform.com",
-    image: "https://yourblogplatform.com/images/blogplatform.png",
+    name: "CHAT APP",
+    description: "Coming Soon",
+    link: "#",
+    image: "#",
   },
 ];
 

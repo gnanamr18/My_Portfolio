@@ -32,7 +32,7 @@ const Contact = ({ handleOnClick, selectedItem }) => {
               <a
                 href={textContent.contact.linkedin}
                 target="_blank"
-                className="text-blue-600 underline"
+                className="text-blue-600 underline text-md"
               >
                 {textContent.contact.linkedin}
               </a>
