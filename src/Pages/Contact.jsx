@@ -17,7 +17,7 @@ const Contact = ({ handleOnClick, selectedItem }) => {
         <section className="flex flex-col items-center md:flex-row md:justify-center gap-20">
           {/* Bold Text */}
           <div className="flex flex-col gap-8  mt-5">
-            <span className="font-serif font-semibold text-2xl leading-loose  md:text-5xl md:leading-loose md:max-w-5xl">
+            <span className="font-serif font-semibold text-5xl leading-loose  md:text-5xl md:leading-loose md:max-w-5xl">
               {textContent.contact.intro}
             </span>
             {/* Normal Text */}
