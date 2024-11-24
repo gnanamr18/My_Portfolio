@@ -13,7 +13,7 @@ const icon = [
     text: "Follow on GitHub",
   },
   {
-    link: " ",
+    link: "mailto:your-email@gmail.com",
     icon: faEnvelope,
     text: "Email Me",
   },

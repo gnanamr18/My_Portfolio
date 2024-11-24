@@ -33,13 +33,13 @@ const projects = [
     description:
       "A reliable news app that keeps you updated with the latest headlines and breaking stories effortlessly.",
     link: "https://github.com/gnanamr18/NEWS-API",
-    image: "https://yourtaskmanager.com/images/taskmanager.png",
+    image: "images/news.png",
   },
   {
     name: "CHAT APP",
     description: "Coming Soon",
     link: "#",
-    image: "#",
+    image: "images/jsImg.png",
   },
 ];
 
