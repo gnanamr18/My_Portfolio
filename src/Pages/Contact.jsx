@@ -13,7 +13,7 @@ const Contact = ({ handleOnClick, selectedItem }) => {
         <Navbar handleOnClick={handleOnClick} selectedItem={selectedItem} />
       </div>
       {/* Contact page */}
-      <Content>
+      <Content handleOnClick={handleOnClick}>
         <section className="flex flex-col items-center md:flex-row md:justify-center gap-20">
           {/* Bold Text */}
           <div className="flex flex-col gap-8  mt-5">
@@ -21,7 +21,7 @@ const Contact = ({ handleOnClick, selectedItem }) => {
               {textContent.contact.intro}
             </span>
             {/* Normal Text */}
-            <p className="font-mono text-xl mt-2 leading-loose p-1">
+            <p className="font-mono text-2xl mt-2 leading-loose p-1">
               {textContent.contact.description1} If you have a specific question
               or comment, please feel free to email me directly at{" "}
               <span className="bg-yellow-500">

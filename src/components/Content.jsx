@@ -4,7 +4,7 @@ const Content = ({
   handleOnClick,
   children}) => {
   return (
-    <div className="flex flex-col items-start  gap-8 max-w-5xl m-5 p-5 selection: mx-auto">
+    <div className="flex flex-col items-start  gap-8 max-w-5xl m-5 p-5 selection: mx-auto w-full">
       <img
         src="/images/logo.jpeg"
         alt="logo"

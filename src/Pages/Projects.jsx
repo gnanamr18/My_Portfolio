@@ -13,7 +13,7 @@ function Projects({ handleOnClick, selectedItem }) {
         <Navbar handleOnClick={handleOnClick} selectedItem={selectedItem} />
       </div>
       {/* Home page */}
-      <Content  >
+      <Content handleOnClick={handleOnClick}  >
         <section className="flex flex-col items-center md:flex-row md:justify-center gap-20" >
           <div className="flex flex-col gap-8  mt-5">
             <span className="font-serif font-semibold text-4xl leading-loose md:max-w-5xl">

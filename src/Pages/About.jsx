@@ -17,7 +17,7 @@ function About({ handleOnClick, selectedItem }) {
       </div>
 
       {/* About page */}
-      <Content >
+      <Content  handleOnClick={handleOnClick}>
         <section className="flex flex-col gap-2 w-full" >
           {/* bolt text and profile photo */}
           <div className="flex flex-col  items-center md:flex-row md:justify-center md:gap-20">
